@@ -5,7 +5,6 @@ from pyquery import PyQuery as pq
 cookie=""
 if not cookie:
     cookie = input("cookie")
-sckey = input("sckey")
 url = 'https://www.52pojie.cn/home.php?mod=task&do=draw&id=2'
 url1 = 'https://www.52pojie.cn/home.php?mod=task&do=apply&id=2'
 headers = {'cookie':cookie,
@@ -18,8 +17,3 @@ msg = doc('.vwmy a').text() + '\t' + doc('#messagetext p').text()
 print(msg)
 if not cookie:
     print('cookie为空')
-if sckey:
-    send_url = f'https://sc.ftqq.com/{sckey}.send?text={msg}'
-    requests.get(send_url)
-
-
