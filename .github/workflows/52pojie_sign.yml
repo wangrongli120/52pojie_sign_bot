@@ -29,12 +29,11 @@ jobs:
     - name: 签到       
       run: |
         cookie='${{ secrets.COOKIE }}'
-        SCKEY='${{ secrets.SCKEY }}'
+
         
        
        
         python 52pojie_sign.py <<EOF
         ${cookie}
-        ${SCKEY}
         EOF
        
