@@ -9,9 +9,8 @@
 
 ### 在setting-secrets里新建secret
 
-secret名 COOKIE
-
-secret值 你的52pojie cookie
+1. secret键 COOKIE
+2. secret值 52pojie cookie值
    
 ### 获取52pojie cookie
 
